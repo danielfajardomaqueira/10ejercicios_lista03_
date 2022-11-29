@@ -23,7 +23,7 @@ public class Exercise8 : MonoBehaviour
 
     private bool leapYear(int NumYear)
     {
-        if (NumYear % 400 == 0)
+        if (NumYear % 400 == 0 && NumYear % 100 != 0 || NumYear % 4 == 0)
         {
             Debug.Log($"{NumYear} is a leap year");
             return true;
